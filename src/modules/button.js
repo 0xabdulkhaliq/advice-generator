@@ -1,12 +1,15 @@
 import { getRandomAdvice } from "./api"
-import { instantiate404Prompt } from "./ui"
+import { instantiate404Prompt, setBrowserBarTheme } from "./ui"
 
 function instantiateButton() {
   const actionBtn = document.querySelector(".main__action-btn")
   const main = document.querySelector("main")
 
   const updateDebounce = debounce((mainElement) => {
-    getRandomAdvice().finally(() => actionStateModifier(mainElement, "off"))
+    getRandomAdvice().finally(() => {
+      actionStateModifier(mainElement, "off")
+      setBrowserBarTheme("off")
+    })
   })
 
   actionBtn.addEventListener("click", (e) => {
@@ -14,6 +17,7 @@ function instantiateButton() {
       instantiate404Prompt()
     } else {
       actionStateModifier(main, "on")
+      setBrowserBarTheme("on")
       updateDebounce(main)
     }
   })

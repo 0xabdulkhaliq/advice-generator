@@ -22,4 +22,10 @@ function updateAdviceOnUI(generatedAdvice) {
   advice.textContent = generatedAdvice.advice
 }
 
-export { updateAdviceOnUI, instantiate404Prompt }
+function setBrowserBarTheme(state) {
+  const theme = document.querySelector('[name="theme-color"]')
+
+  state === "on" ? (theme.content = "#52FFA8") : (theme.content = "#323A49")
+}
+
+export { updateAdviceOnUI, instantiate404Prompt, setBrowserBarTheme }
