@@ -185,7 +185,7 @@ picture {
   margin-top: 1.5rem;
 }
 
-button {
+.main__action-btn {
   position: absolute;
   background: var(--neon-green);
   padding: 1.6rem;
@@ -195,6 +195,7 @@ button {
   display: grid;
   place-items: center;
   transition: 0.7s ease;
+  z-index: 1;
 }
 
 [class^="dice__face"],
@@ -245,7 +246,7 @@ button {
 [class^="dice__face"] {
   position: absolute;
   background: 0% / contain url(./images/icon-dice.svg) no-repeat;
-  box-shadow: inset 0 0 10px #202733;
+  box-shadow: inset 0 0 0 1px #555;
 }
 
 .dice__face--front {
@@ -269,7 +270,7 @@ button {
 }
 
 .dice__face--bottom {
-  transform: rotateY(-90deg) translateZ(15px);
+  transform: rotateX(90deg) translateZ(-15px);
 }
 
 @keyframes dice-spin {
