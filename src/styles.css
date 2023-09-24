@@ -159,7 +159,7 @@ blockquote {
 
 .blockquote__quote::before {
   content: "“";
-  margin-right: -0.2rem;
+  margin-left: -0.1rem;
 }
 
 .blockquote__quote::after {
