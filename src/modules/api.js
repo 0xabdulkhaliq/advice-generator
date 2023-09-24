@@ -13,7 +13,7 @@ async function getRandomAdvice() {
     }
     throw new Error()
   } catch (error) {
-    instantiate404Prompt("Location not found")
+    instantiate404Prompt()
     return Promise.reject(error)
   }
 }
