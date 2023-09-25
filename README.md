@@ -49,7 +49,7 @@
 
 - |||
   | :----- | :----- |
-  | Solution URL: | [To be posted :hourglass_flowing_sand:](#link) |
+  | Solution URL: | [ADVICE GENERATOR 🎯 [ ASYNC/AWAIT - ES6 MODULES - WEBPACK - 3D DICE ]](https://www.frontendmentor.io/solutions/advice-generator-asyncawait-es6-modules-webpack-3d-dice-kW5sm9EPZa) |
   | Live Site URL: | [https://advice-generator-0xabdulkhalid.vercel.app/](https://advice-generator-0xabdulkhalid.vercel.app/) |
   |||
 
